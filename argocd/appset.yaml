@@ -21,16 +21,15 @@ spec:
         name: in-cluster
       project: kargo-helm
       sources:
-        - repoURL: https://github.com/iben12/kargo-helm.git
-          path: env/{{path.basename}}
-          targetRevision: HEAD
-          ref: values
         - chart: guestbook-chart
           repoURL: registry-1.docker.io/iben12
-          targetRevision: ^0.1.0
+          targetRevision: ^0.2.0
           helm:
             passCredentials: true
             releaseName: guestbook
             valueFiles:
-            - "$vaules/values.yaml"
-            - "$vaules/feature-flags.yaml"
+            - $values/env/{{path.basename}}/feature-flags.yaml
+            - $values/env/{{path.basename}}/values.yaml
+        - repoURL: https://github.com/iben12/kargo-helm.git
+          targetRevision: HEAD
+          ref: values

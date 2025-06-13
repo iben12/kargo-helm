@@ -18,8 +18,8 @@ metadata:
 spec:
   subscriptions:
   - chart:
-      repoURL: oci://ghcr.io/iben12/guestbook-chart
-      semverConstraint: ^0.1.0
+      repoURL: oci://registry-1.docker.io/iben12/guestbook-chart
+      semverConstraint: ">0.1.0"
 ---
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse

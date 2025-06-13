@@ -45,6 +45,12 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
+      name: guestbook-chart
+    sources:
+      stages:
+      - staging
+  - origin:
+      kind: Warehouse
       name: guestbook
     sources:
       stages:
@@ -78,6 +84,12 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
+      name: guestbook-chart
+    sources:
+      stages: 
+      - prod-canary
+  - origin:
+      kind: Warehouse
       name: guestbook
     sources:
       stages:
@@ -109,6 +121,12 @@ metadata:
     kargo.akuity.io/color: red
 spec:
   requestedFreight:
+  - origin:
+      kind: Warehouse
+      name: guestbook-chart
+    sources:
+      stages:
+      - prod-canary
   - origin:
       kind: Warehouse
       name: guestbook
