@@ -1,0 +1,7 @@
+helmCharts:
+  - name: guestbook-chart
+    repo: oci://ghcr.io/iben12/guestbook-chart
+    releaseName: guestbook
+    namespace: kargo-helm
+    version: 0.1.0
+    valuesFile: values.yaml

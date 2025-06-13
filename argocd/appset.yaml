@@ -21,11 +21,6 @@ spec:
         name: in-cluster
       project: kargo-helm
       source:
-        chart: guestbook
-        repoURL: ghcr.io/iben12/guestbook-chart
-        targetRevision: 0.1.0
-        helm:
-          releaseName: guestbook
-          valueFiles:
-          - "/env/{{path.basename}}/values.yaml"
-          - "/env/{{path.basename}}/feature-flags.yaml"
+        path: /env/{{path.basename}}/
+        repoURL: ghcr.io/iben12/guestbook
+        targetRevision: HEAD
