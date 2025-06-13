@@ -13,6 +13,17 @@ spec:
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
+  name: guestbook-chart
+  namespace: kargo-helm
+spec:
+  subscriptions:
+  - chart:
+      repoURL: oci://ghcr.io/iben12/guestbook-chart
+      semverConstraint: ^0.1.0
+---
+apiVersion: kargo.akuity.io/v1alpha1
+kind: Warehouse
+metadata:
   name: features
   namespace: kargo-helm
 spec:

@@ -9,6 +9,11 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
+      name: guestbook-chart
+    sources:
+      direct: true
+  - origin:
+      kind: Warehouse
       name: guestbook
     sources:
       direct: true

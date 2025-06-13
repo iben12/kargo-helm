@@ -23,6 +23,7 @@ spec:
       source:
         chart: guestbook
         repoURL: ghcr.io/iben12/guestbook-chart
+        targetRevision: 0.1.0
         helm:
           releaseName: guestbook
           valueFiles:
