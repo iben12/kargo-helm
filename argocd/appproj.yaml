@@ -16,3 +16,4 @@ spec:
     kind: '*'
   sourceRepos:
   - https://github.com/iben12/kargo-helm.git
+  - https://registry-1.docker.io/iben12

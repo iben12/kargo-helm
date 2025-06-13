@@ -20,7 +20,17 @@ spec:
         namespace: kargo-helm-{{path.basename}}
         name: in-cluster
       project: kargo-helm
-      source:
-        path: /env/{{path.basename}}/
-        repoURL: ghcr.io/iben12/guestbook
-        targetRevision: HEAD
+      sources:
+        - repoURL: https://github.com/iben12/kargo-helm.git
+          path: env/{{path.basename}}
+          targetRevision: HEAD
+          ref: values
+        - chart: guestbook-chart
+          repoURL: registry-1.docker.io/iben12
+          targetRevision: ^0.1.0
+          helm:
+            passCredentials: true
+            releaseName: guestbook
+            valueFiles:
+            - "$vaules/values.yaml"
+            - "$vaules/feature-flags.yaml"
