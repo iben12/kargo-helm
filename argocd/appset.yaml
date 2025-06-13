@@ -21,8 +21,8 @@ spec:
         name: in-cluster
       project: kargo-helm
       source:
-        path: charts/guestbook
-        repoURL: https://github.com/iben12/kargo-helm.git
+        chart: guestbook
+        repoURL: ghcr.io/iben12/guestbook
         helm:
           valueFiles:
           - "/env/{{path.basename}}/values.yaml"

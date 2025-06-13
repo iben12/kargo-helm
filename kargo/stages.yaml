@@ -125,4 +125,4 @@ spec:
         - name: envPath
           value: env/prod-us
         - name: argocdApp
-          value: kargo-helm-prod
+          value: kargo-helm-prod-us
