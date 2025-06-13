@@ -59,7 +59,7 @@ spec:
         - name: envPath
           value: env/prod-canary
         - name: argocdApp
-          value: kargo-helm-prod-eu
+          value: kargo-helm-prod-canary
 
 ---
 apiVersion: kargo.akuity.io/v1alpha1
