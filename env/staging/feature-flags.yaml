@@ -1,4 +1,4 @@
 featureFlags:
   FEATURE_AAA: enabled
   FEATURE_BBB: disabled
-  FEATURE_FOO: enabled
+  FEATURE_FOO: disabled
