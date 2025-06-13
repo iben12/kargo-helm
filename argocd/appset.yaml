@@ -22,7 +22,7 @@ spec:
       project: kargo-helm
       source:
         chart: guestbook
-        repoURL: ghcr.io/iben12/guestbook
+        repoURL: ghcr.io/iben12/guestbook-chart
         helm:
           valueFiles:
           - "/env/{{path.basename}}/values.yaml"
