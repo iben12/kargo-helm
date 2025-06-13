@@ -19,7 +19,7 @@ spec:
   subscriptions:
   - chart:
       repoURL: oci://registry-1.docker.io/iben12/guestbook-chart
-      semverConstraint: ">0.1.0"
+      discoveryLimit: 20
 ---
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
