@@ -2,3 +2,4 @@ featureFlags:
   FEATURE_AAA: enabled
   FEATURE_BBB: disabled
   FEATURE_FOO: enabled
+  BAR: disabled
